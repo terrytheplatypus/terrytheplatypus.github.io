@@ -1,46 +1,169 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>David Cherepov's Epic Webpage</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: #ffffff;
+      overflow: hidden;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin: 10px 0;
+    }
+
+    a {
+      color: #ffdd57;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      color: #ff5733;
+      text-decoration: underline;
+    }
+
+    form {
+      margin-top: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      width: 300px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 1rem;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    button {
+      background: #ffdd57;
+      color: #333;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #ff5733;
+    }
+
+    /* Background Animation */
+    .background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      overflow: hidden;
+    }
+
+    .background span {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      animation: float 5s infinite ease-in-out;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-30px);
+      }
+    }
+
+    /* Randomly position circles */
+    .background span:nth-child(1) { top: 10%; left: 20%; animation-duration: 4s; }
+    .background span:nth-child(2) { top: 30%; left: 50%; animation-duration: 6s; }
+    .background span:nth-child(3) { top: 60%; left: 70%; animation-duration: 5.5s; }
+    .background span:nth-child(4) { top: 80%; left: 40%; animation-duration: 7s; }
+    .background span:nth-child(5) { top: 15%; left: 80%; animation-duration: 4.5s; }
+    .background span:nth-child(6) { top: 50%; left: 10%; animation-duration: 6.5s; }
+    .background span:nth-child(7) { top: 70%; left: 30%; animation-duration: 5s; }
+    .background span:nth-child(8) { top: 20%; left: 60%; animation-duration: 5.5s; }
+    .background span:nth-child(9) { top: 90%; left: 50%; animation-duration: 7s; }
+    .background span:nth-child(10) { top: 40%; left: 75%; animation-duration: 4.5s; }
+  </style>
+</head>
 <body>
   <div class="background">
-</div>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 
-<p>My name is David Cherepov. Here is my epic webpage with things i've done.</p>
-<p>Links:</p>
-<p> <a href=https://www.linkedin.com/in/david-cherepov/>my linkedin</a></p>
+  <h1>David Cherepov's Epic Webpage</h1>
+  <p>My name is David Cherepov. Here is my epic webpage with things I've done.</p>
+  <p>Links:</p>
+  <p><a href="https://www.linkedin.com/in/david-cherepov/">My LinkedIn</a></p>
+  <p><a href="https://github.com/terrytheplatypus">My GitHub</a></p>
+  <p><a href="https://tennisers2.bandcamp.com/">My Bandcamp Songs</a></p>
+  <p><a href="https://soundcloud.com/user-850593311">My SoundCloud Songs</a></p>
+  <p><a href="https://battleofthebits.com/barracks/Profile/tennisers/">My Battle of the Bits Songs</a></p>
+  <p><a href="https://library.vcvrack.com/?brand=Plurm">My VCV Plugin</a></p>
+  <p><a href="https://brumbo.printify.me/products">My Shirts</a></p>
+  <p><a href="https://www.glorioustrainwrecks.com/games/*/Son%20of%20a%20dolphin">My Really Old Games</a></p>
+  <p>My websites:</p>
+  <p><a href="https://terrytheplatypus.github.io/1/index.html">1: I'm lonelier when I'm with you.</a></p>
 
-<p><a href=https://github.com/terrytheplatypus>my github</a></p>
-
-<p><a href=https://tennisers2.bandcamp.com/>my bandcamp songs</a></p>
-
-<p><a href=https://soundcloud.com/user-850593311>my soundcloud songs</a></p>
-
-<p><a href=https://battleofthebits.com/barracks/Profile/tennisers/>my battle of the bits songs</a></p>
-
-<p><a href=https://library.vcvrack.com/?brand=Plurm> my vcv plugin </a></p>
-
-<p><a href=https://brumbo.printify.me/products> my shirts</a></p>
-
-<p><a href=https://www.glorioustrainwrecks.com/games/*/Son%20of%20a%20dolphin>my really old games</a></p>
-
-<p>My websites:</p>
-<a href=https://terrytheplatypus.github.io/1/index.html>1:I'm lonelier when I'm with you.</a>
-
-<!-- modify this form HTML and place wherever you want your form -->
-<form
-  action="https://formspree.io/f/myyrvrzp"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
-
+  <form action="https://formspree.io/f/myyrvrzp" method="POST">
+    <label>
+      Your email:
+      <input type="email" name="email" required>
+    </label>
+    <label>
+      Your message:
+      <textarea name="message" rows="4" required></textarea>
+    </label>
+    <button type="submit">Send</button>
+  </form>
 </body>
 </html>
